@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>[ Yichen Jia @ LSU ]</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="css/font-awesome.min.css">
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/menucollapse.js"></script>
+<script type="text/javascript" src="js/arrow78.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+
+<body id="page-top" class="index">
+
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="glyphicon glyphicon-search"></span>
+            </button>
+            <button id="button2" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <span><a href="#"><img border="0" width="170" height="50" src="images/LSU.png"/></a></span>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                Home<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                    <li><a onclick="javascript:reset_menus();$('#tab-1-content').show();" href="#intro">Introduction</a></li>
+                    <li><a target="_blank" href="resume/yichenjia.pdf">CV (PDF)</a></li>
+                    </ul>
+                </li>
+                <li class="page-scroll">
+                    <a onclick="javascript:reset_menus();$('#tab-2-content').show();" href="#interests">Interests</a>
+                </li>
+                <li class="page-scroll">
+                    <a onclick="javascript:reset_menus();$('#tab-3-content').show();" href="#publications">Publications</a>
+                </li>
+                <li class="page-scroll">
+                    <a onclick="javascript:reset_menus();$('#tab-4-content').show();" href="#courseworks">Courseworks</a>
+                </li>
+                <li class="page-scroll">
+                    <a onclick="javascript:reset_menus();$('#tab-5-content').show();" href="#teaching">Teaching</a>
+                </li>
+                <li class="page-scroll">
+                    <a onclick="javascript:reset_menus();$('#tab-6-content').show();" href="#service">Service</a>
+                </li>
+
+                <li class="page-scroll">
+                    <a onclick="javascript:reset_menus();$('#bs-example-navbar-collapse-2').toggle();">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </a>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+
+        <!-- search box submenu -->
+        <div class="collapse" id="bs-example-navbar-collapse-2">
+            <gcse:search></gcse:search>
+        </div>
+
+    </div><!-- /.container-fluid -->
+</nav>
+
+<section>
+    <!-- Place this tag where you want the search results to render -->
+    <gcse:searchresults-only></gcse:searchresults-only>
+</section>
+
+<!-- Home Section -->
+<section id="home" style="margin-top:40px">
+<div class="container">
+        <div align="left" class="col-md-3">
+            <a target="_blank" href="images/yichenjia.jpg">
+                <img id="mobile-img" src="images/yichenjia.jpg" width="230" border="0" height="230" alt=""></a>
+        </div>
+        <div align="left" class="col-md-4">
+            <h3>Yichen Jia
+            <h4>Ph.D Candidate<br>
+            Computer Science & Engineering<br>
+            Louisiana State University<br>
+            2316 Patrick F. Taylor Hall<br>
+            Baton Rouge, LA 70803<br>
+            Tel: (225) 715-1882<br/>
+            Email:
+            <script language="JavaScript">
+                <!--
+                document.write("&nbsp;");
+                spiderjam('yjia','csc.lsu.edu');
+                -->
+            </script><br/>
+	    </h4>
+	    <h4>
+		    <a href="resume/yichenjia.pdf" class="btn-sm btn-primary"><font size="4">Curriculum Vitae(PDF)&raquo;</font></a>
+            </h5>
+        </div>
+        <div align="left" class="col-md-5">
+            <h4>
+		    <br>
+		    <br>
+		    <br>
+		    <br>
+		    <font size="5" color="PURPLE"><i>
+		    Education is not filling a bucket <br> 
+		    but lighting a fire.    ---William Yeats<br>
+		    </i>
+		    </font>
+            </h4>
+        </div>
+
+        <!--<p><a href="#" class="btn btn-primary">More &raquo;</a></p>-->
+        <i class="expandshow" style="display:none;" id="tab-1">
+            <button class="btn btn-primary btn-lg btn-block" style="width: 100%;" onclick="javascript:$('.allshow').show();$('.noshow').hide();$('.collapseshow').show();$('.expandshow').hide();">EXPAND ALL SECTIONS <span class="glyphicon glyphicon-chevron-down"></span></button>
+        </i>
+        <i class="collapseshow" style="display:none;" id="tab-1">
+            <button class="btn btn-primary btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('.allshow').hide();$('.noshow').show();$('.expandshow').show();$('.collapseshow').hide();">COLLAPSE ALL SECTIONS <span class="glyphicon glyphicon-chevron-up"></span></button>
+        </i>
+
+    </div>
+</section>
+
+<!-- Home Section -->
+<section id="intro">
+    <div class="container lead">
+        <div style="text-align: left; margin-top:10px" class="col-md-12">
+            <!--<h2>Welcome!</h2>-->
+
+            <i class="noshow" style="display:none;" id="tab-1">
+            <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-1-content').toggle();">Introduction <span class="glyphicon glyphicon-chevron-right"></span></button>
+            </i>
+
+            <div class="allshow" style="display:none;" id="tab-1-content">
+            <hr class="star-primary">
+
+            <p class="lead">I am currently a Ph.D Candidate at <a target="_blank", href="http://cse.lsu.edu">Department of Computer Science</a>, <a target="_blank", href="http://www.lsu.edu">Louisiana State University</a>, under the supervision of <a target="_blank", href="http://www.csc.lsu.edu/~fchen">Dr.Feng Chen</a>. I obtained my B.S. degree at the <a target="_blank", href="http://math.jlu.edu.cn/">College of Mathematics</a>, <a target="_blank", href="http://www.jlu.edu.cn">Jilin University</a> in 2013. Before joining Louisiana State University, I worked in industry as a software engineer in 2013-2014. Over the summer of 2018 and 2019, I interned with <a target="_blank", href="http://www.arm.com/">Arm</a> at Austin, TX. 
+	    </p>
+            <p><font color="red">
+            I am currently actively seeking a full time R&D position in industry from Spring 2020. 
+            </font>
+            </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Research Section -->
+<section id="interests">
+    <div class="container lead">
+        <div style="text-align: left; margin-top:10px" class="col-md-12">
+
+            <i class="noshow" style="display:none;" id="tab-6">
+                <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-6-content').toggle();">Interests  <span class="glyphicon glyphicon-chevron-right"></span></button>
+            </i>
+            <div class="allshow" style="display:none;" id="tab-6-content">
+
+           <hr class="star-primary">
+           <h2>Research Interests </h2>
+
+           <p>
+            <ul>
+                <li>
+			<span class="label label-primary">Systems</span> Operating and Storage Systems 
+                </li>
+                <li>
+                    <span class="label label-primary">Co-design</span> Software &amp; Hardware Co-design
+                </li>
+                <li>
+                    <span class="label label-primary">Modeling</span> Machine/Deep Learning 
+                </li>
+            </ul>
+            </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="publications">
+    <div class="container lead">
+        <div style="text-align: left; margin-top:10px" class="col-md-12">
+
+            <i class="noshow" style="display:none;" id="tab-3">
+                <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-3-content').toggle();">Publications  <span class="glyphicon glyphicon-chevron-right"></span></button>
+            </i>
+            <div class="allshow" style="display:none;" id="tab-3-content">
+            <hr class="star-primary">
+
+	    <h2>Publications <a target="_blank", href="https://scholar.google.com/citations?user=6HMs60kAAAAJ&hl=en"><font size="3" color="black">[Google Scholar Citation]</font></a></h2>
+            <ul>
+		    <li><span class="label label-success">MSST'19</span> <b>Yichen Jia</b>, Eric Anger and Feng Chen, <a target="_blank", href="papers/msst19-jia.pdf">"When NVMe over Fabrics Meets Arm: Performance and Implications"</a>, <i>to appear in Proceedings of the 35th IEEE International Conference on Massive Storage Systems and Technology</i>(<a target="_blank", href="http://storageconference.us/">MSST'19</a>) , Santa Clara, CA, May 20-24, 2019.</li>
+		  <li><span class="label label-success">ToS</span> Zhaoyan Shen, Feng Chen, <b>Yichen Jia</b> and Zili Shao, <a target="_blank", href="papers/tos18-didacache.pdf">"DIDACache: An Integration of Device and Application for Flash based Key-value Caching"</a>, <i>ACM Transactions on Storage</i>, Vol. 14, Issue 3, 2018.</li>
+		  <li><span class="label label-success">MASCOTS'18</span> <b>Yichen Jia</b>, Zili Shao and Feng Chen, <a target="_blank", href="papers/SlimCache.pdf">"SlimCache: Exploiting Data Compression Opportunities in Key-Value Caching Systems"</a>,  <i> Proceedings of the 26th IEEE International Symposium on the Modeling, Analysis, and Simulation of Computer and Telecommunication Systems</i>(<a target="_blank", href="http://www.mscs.mu.edu/~mascots/index.html">MASCOTS'18</a>), Milwaukee, WI, Sep 25-28, 2018.</li>
+                 <li><span class="label label-success">FAST'17</span> Zhaoyan Shen, Feng Chen, <b>Yichen Jia</b> and Zili Shao, <a target="_blank", href="papers/fast17-shen.pdf">"DIDACache: A Deep Integration of Device and Application for Flash based Key-value Caching"</a>, <i>Proceedings of the 15th USENIX Conference on File and Storage Technologies</i>(<a target="_blank", href="https://www.usenix.org/conference/fast17">FAST'17</a>) , Santa Clara, CA, February 27-March 2, 2017.</li>
+                 <li><span class="label label-success">HotStorage'16</span> Zhaoyan Shen, Feng Chen, <b>Yichen Jia</b> and Zili Shao, <a target="_blank", href="papers/hotstorage16-shen.pdf">"Optimizing Flash-based Key-value Cache Systems"</a>, <i>Proceedings of the 8th USENIX Workshop on Hot Topics in Storage and File Systems</i>(<a target="_blank", href="https://www.usenix.org/conference/hotstorage16">HotStorage'16</a>), Denver, CO, June 20-21, 2016. </li>
+                 <li><span class="label label-success">JICS'14</span> <b>Yichen Jia</b> and Tieru Wu, <a target="_blank", href="papers/JICS14-jia.pdf">"Seamless Instant Image Cloning Based on Derivative and Intensity Interpolation"</a>, <i>Journal of Information and Computational Science</i>(<a target="_blank", href="http://manu35.magtech.com.cn/Jwk_ics/EN/volumn/home.shtml">JICS'14</a>), Vol.11, Issue.9, pp.3019-3028, 2014. </li>
+
+            </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Teaching Section -->
+<section id="teaching">
+    <div class="container lead">
+        <div style="text-align: left; margin-top:10px" class="col-md-12">
+
+            <i class="noshow" style="display:none;" id="tab-5">
+                <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-5-content').toggle();">Teaching <span class="glyphicon glyphicon-chevron-right"></span></button>
+            </i>
+            <div class="allshow" style="display:none;" id="tab-5-content">
+            <hr class="star-primary">
+            <h2>Teaching</h2>
+            <ul>
+                <li><span class="label label-default">CSC1240</span> Statistics and Graph Matlab, Fall 2014</li>
+                <li><span class="label label-default">CSC1253</span> Computer Science with C++, Fall 2014</li>
+                <li><span class="label label-default">CSC3501</span> Computer Organization, Spring 2015</li>
+                <li><span class="label label-default">CSC1253</span> Computer Science II with C++, Fall 2015</li>
+                <li><span class="label label-default">CSC2262</span> Numerical Methods, Spring 2016</li> 
+            </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Service Section -->
+<section id="service">
+
+    <div class="container lead">
+        <div style="text-align: left; margin-top:10px" class="col-md-12">
+
+            <i class="noshow" style="display:none;" id="tab-6">
+                <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-6-content').toggle();">Service  <span class="glyphicon glyphicon-chevron-right"></span></button>
+            </i>
+            <div class="allshow" style="display:none;" id="tab-6-content">
+
+           <hr class="star-primary">
+           <h2>Professional Service </h2>
+
+           <p>
+            <span class="label label-success">Peer Review and Referee</span>
+            <ul>
+                <li>
+                    <b>Journal and Conference Referee:</b>
+                    IEEE <a href="https://www.computer.org/web/tc" target="_blank">Transactions on Computers (TC)</a> (1), ICA3PP(1), ICPP(1), IEEE <a href="https://www.computer.org/web/tbd" target="_blank">Transactions on Big Data (TBD)</a> (1).
+                </li>
+            </ul>
+            </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Home Section -->
+<section id="links">
+    <div class="container lead">
+        <div style="text-align: left; margin-top:10px" class="col-md-12">
+
+            <i class="noshow" style="display:none;" id="tab-8">
+                <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-8-content').toggle();">Links  <span class="glyphicon glyphicon-chevron-right"></span></button>
+            </i>
+
+            <div class="allshow" style="display:none;" id="tab-8-content">
+
+            <hr class="star-primary">
+            <h2>Useful Links</h2>
+            <ul>
+                <li><span class="label label-success"><a target="_blank" href="http://pages.cs.wisc.edu/~remzi/OSTEP/"><font color="white">Free OS Book</font></a></span> An excellent introduction to operating system.</li>
+                <li><span class="label label-primary"><a target="_blank" href="http://www.ece.ucsb.edu/~yuanxie/Advice.html"><font color="white">Advices for PhDs</font></a></span> Advice collection for Ph.Ds.</a> </li>
+                <li><span class="label label-success"><a target="_blank" href="https://github.com/csyjia"><font color="white">Github</font></a></span> Github Personal Homepage.</li>
+                <li><span class="label label-warning"><a target="_blank" href="http://www.maths.tcd.ie/~dwilkins/LaTeXPrimer/"><font color="white">Latex Usage</font></a></span> How to use Latex?</a></li>
+            </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr class="star-primary">
+<footer>
+    <small>
+    <center>
+        © 2017 | Yichen Jia. Credits: AR template
+	<a onclick="javascript:$('#credit').toggle();"><img border="0" src="images/ccby.png"/></a>
+        <div style="display:none;" id="credit">[AR template available under Creative Commons CC BY 4.0 licence: 
+	<a href="https://github.com/dmsl/academic-responsive-template" target="_blank">
+ https://github.com/dmsl/academic-responsive-template
+        </a> ]
+	</div>
+    </center>
+    </small>
+</footer>
+
+
+</body>
+
+</html>
